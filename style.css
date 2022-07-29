@@ -1,0 +1,240 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  
+}
+body{
+  background-color: #f8f8fa;
+}
+header{
+  background-color: #4618fe;
+  height: 390px;
+}
+nav{
+  display:  flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  
+  color: white;
+}
+nav .nav-item, .nav-item-active {
+  margin-top: 20px;
+  /* margin-left: 20px; */
+  margin-right: 20px;
+}
+.nav-item-active{
+  border: 0px;
+  padding: 5px 10px;
+  background-color: white;
+  color: #000000;
+}
+
+header .logo{
+  width: 100px;
+  margin-left: 50px;
+
+}
+
+.header-text{
+  margin-left: 50px;
+}
+.header-text img{
+  position: relative;
+  top: 50px
+}
+
+.header-text h2{
+  position: relative;
+  top: 30px;
+  color: white;
+}
+
+.header-text p{
+  position: relative;
+  top: 30px;
+  color: white;
+}
+
+.header-image{
+  position: absolute;
+  right: 10px;
+  top: 80px;
+  width: 600px;
+  height: 400px;
+}
+.companies{
+  margin-left: 70px;
+  margin-top: 10px;
+ 
+}
+.companies .company-items{
+  text-decoration: none;
+  text-align: center;
+  margin-right: 25px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.api{
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+}
+.cards div{
+  padding: 10px;
+}
+.api .cards{
+  display: flex;
+  justify-content:space-around;
+}
+
+.card-active{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.blog-heading{
+  margin-left: 50px;
+  display: flex;
+  justify-content:space-between;
+}
+
+.blog-heading h4{
+  margin-top: 80px;
+  margin-right: 50px;
+  color: #633cfc;
+}
+.blog-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content:space-around;
+}
+
+
+.blog-card {
+  display: flex;
+  flex-direction: row;
+  
+}
+.blog-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.blog-author-info{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+.blog-contents{
+  background-color: #ffffff;
+  width: 300px;
+  height: 287px;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.blog-author {
+  margin-top: 10px;
+  margin-left: 5px;
+  
+}
+
+.faq-section{
+  display: flex;
+  flex-direction: row;
+  /* justify-content:space-between; */
+  margin-top: 50px;
+  background-color: #e9edff;
+  height: 324px;
+}
+
+.faq-content{
+  margin-left: 50px;
+  flex-grow: 3
+}
+.faq-content button{
+  background-color: #4618fe;
+  color: #ffffff;
+  border-radius: 2px;
+  border: 0px;
+  padding: 5px 8px;
+}
+.download-content h1{
+  font-weight: bolder;
+}
+.download-content span{
+  font-weight: lighter;
+}
+.download-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.download-section .download-email{
+    background-color: #e9edff;
+    height: 40px;
+    width: 480px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.download-email input{
+  background-color: #e9edff;
+  border: 0px;
+  padding: 10px 30px;
+  width: 300px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.download-email button{
+  background-color: #4618fe;
+  border: 0px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  
+}
+.footer-section{
+  background-color: #4718fe;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo{
+  margin-left: 50px;
+}
+.list, .logos-list{
+  display: flex;
+  flex-direction: row;
+  list-style:none;
+}
+.list-items{
+  margin: 10px;
+  color: #ffffff;
+}
+.footer-logos{
+  margin-right: 10px;
+}
+
+.logos-list{
+  margin-right: 80px;;
+}
+/* .logos-list{
+  display: flex;
+  flex-direction: row;
+  list-style:none;
+} */

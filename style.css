@@ -11,7 +11,7 @@ body{
 }
 header{
   background-color: #4618fe;
-  height: 390px;
+  height: 560px;
 }
 nav{
   display:  flex;
@@ -20,6 +20,9 @@ nav{
   align-items: center;
   
   color: white;
+}
+.nav-item{
+  display: none;
 }
 nav .nav-item, .nav-item-active {
   margin-top: 20px;
@@ -61,14 +64,14 @@ header .logo{
 
 .header-image{
   position: absolute;
-  right: 10px;
-  top: 80px;
-  width: 600px;
-  height: 400px;
+  right: 8px;
+  top: 350px;
+  width: 380px;
+  height: 260px;
 }
 .companies{
-  margin-left: 70px;
-  margin-top: 10px;
+  margin-left: 20px;
+  margin-top: 50px;
  
 }
 .companies .company-items{
@@ -80,17 +83,21 @@ header .logo{
 }
 
 .api{
-  margin: 50px;
+  margin: 30px;
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content:center;
+  align-items: center;
+  font-size: 15px;
 }
 .cards div{
   padding: 10px;
 }
 .api .cards{
   display: flex;
-  justify-content:space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
 }
 
 .card-active{
@@ -113,6 +120,7 @@ header .logo{
   flex-wrap: wrap;
   margin: 10px;
   justify-content:space-around;
+  align-items: center;
 }
 
 
@@ -137,8 +145,8 @@ header .logo{
 
 .blog-contents{
   background-color: #ffffff;
-  width: 300px;
-  height: 287px;
+  /* width: 300px;
+  height: 287px; */
   align-items: center;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -151,16 +159,16 @@ header .logo{
 
 .faq-section{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   /* justify-content:space-between; */
   margin-top: 50px;
   background-color: #e9edff;
-  height: 324px;
+  height: auto;
 }
 
 .faq-content{
-  margin-left: 50px;
-  flex-grow: 3
+ order: 2;
+ padding: 10px;
 }
 .faq-content button{
   background-color: #4618fe;
@@ -168,6 +176,12 @@ header .logo{
   border-radius: 2px;
   border: 0px;
   padding: 5px 8px;
+}
+.faq-image{
+  order: 1;
+}
+.faq-image img{
+  width: 465px;
 }
 .download-content h1{
   font-weight: bolder;
@@ -177,8 +191,9 @@ header .logo{
 }
 .download-section{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -187,7 +202,7 @@ header .logo{
 .download-section .download-email{
     background-color: #e9edff;
     height: 40px;
-    width: 480px;
+    width: 400px;
     text-align: center;
     border-radius: 20px;
     margin-top: 30px;
@@ -196,7 +211,7 @@ header .logo{
   background-color: #e9edff;
   border: 0px;
   padding: 10px 30px;
-  width: 300px;
+  width: 225px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -209,7 +224,7 @@ header .logo{
 }
 .footer-section{
   background-color: #4718fe;
-  height: 200px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -218,9 +233,7 @@ header .logo{
   margin-left: 50px;
 }
 .list, .logos-list{
-  display: flex;
-  flex-direction: row;
-  list-style:none;
+  display: none;
 }
 .list-items{
   margin: 10px;
@@ -238,3 +251,249 @@ header .logo{
   flex-direction: row;
   list-style:none;
 } */
+
+@media screen and (min-width:768px) {
+  * {
+    font-family: "Poppins", sans-serif;
+    
+  }
+  body{
+    background-color: #f8f8fa;
+  }
+  header{
+    background-color: #4618fe;
+    height: 390px;
+  }
+  nav{
+    display:  flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    
+    color: white;
+  }
+  .nav-item{
+    display: block;
+  }
+  nav .nav-item, .nav-item-active {
+    margin-top: 20px;
+    /* margin-left: 20px; */
+    margin-right: 20px;
+  }
+  .nav-item-active{
+    border: 0px;
+    padding: 5px 10px;
+    background-color: white;
+    color: #000000;
+  }
+  
+  header .logo{
+    width: 100px;
+    margin-left: 50px;
+  
+  }
+  
+  .header-text{
+    margin-left: 50px;
+  }
+  .header-text img{
+    position: relative;
+    top: 50px
+  }
+  
+  .header-text h2{
+    position: relative;
+    top: 30px;
+    color: white;
+  }
+  
+  .header-text p{
+    position: relative;
+    top: 30px;
+    color: white;
+  }
+  
+  .header-image{
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    width: 600px;
+    height: 400px;
+  }
+  .companies{
+    margin-left: 70px;
+    margin-top: 10px;
+   
+  }
+  .companies .company-items{
+    text-decoration: none;
+    text-align: center;
+    margin-right: 25px;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  .api{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+  }
+  .cards div{
+    padding: 10px;
+  }
+  .api .cards{
+    display: flex;
+    justify-content:space-around;
+  }
+  
+  .card-active{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .blog-heading{
+    margin-left: 50px;
+    display: flex;
+    justify-content:space-between;
+  }
+  
+  .blog-heading h4{
+    margin-top: 80px;
+    margin-right: 50px;
+    color: #633cfc;
+  }
+  .blog-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content:space-around;
+  }
+  
+  
+  .blog-card {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .blog-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .blog-author-info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 50px;
+  }
+  
+  .blog-contents{
+    background-color: #ffffff;
+    width: 300px;
+    height: 287px;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .blog-author {
+    margin-top: 10px;
+    margin-left: 5px;
+    
+  }
+  
+  .faq-section{
+    display: flex;
+    flex-direction: row;
+    /* justify-content:space-between; */
+    margin-top: 50px;
+    background-color: #e9edff;
+    height: 324px;
+  }
+  
+  .faq-content{
+    margin-left: 50px;
+    flex-grow: 3;
+    order: unset;
+    padding: 0;
+    
+  }
+  .faq-content button{
+    background-color: #4618fe;
+    color: #ffffff;
+    border-radius: 2px;
+    border: 0px;
+    padding: 5px 8px;
+  }
+  .faq-image{
+    order:unset;
+  }
+  .faq-image img{
+    width: auto;
+  }
+  .download-content h1{
+    font-weight: bolder;
+  }
+  .download-content span{
+    font-weight: lighter;
+  }
+  .download-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .download-section .download-email{
+      background-color: #e9edff;
+      height: 40px;
+      width: 480px;
+      text-align: center;
+      border-radius: 20px;
+      margin-top: 30px;
+  }
+  .download-email input{
+    background-color: #e9edff;
+    border: 0px;
+    padding: 10px 30px;
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .download-email button{
+    background-color: #4618fe;
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    
+  }
+  .footer-section{
+    background-color: #4718fe;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-logo{
+    margin-left: 50px;
+  }
+  .list, .logos-list{
+    display: flex;
+    flex-direction: row;
+    list-style:none;
+  }
+  .list-items{
+    margin: 10px;
+    color: #ffffff;
+  }
+  .footer-logos{
+    margin-right: 10px;
+  }
+  
+  .logos-list{
+    margin-right: 80px;;
+  }
+}
